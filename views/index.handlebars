@@ -1,0 +1,50 @@
+<div class="container">
+
+
+  <div class="row">
+    <img
+      src="https://images.vexels.com/media/users/3/152411/isolated/preview/4a22d435331dde73ae0f1cebbdbaacff-double-burger-icon-by-vexels.png"
+      alt="" id="burgerIcon">
+    <h1>
+      Eat-Da-Burger
+    </h1>
+
+    <ol>
+      {{#each burgers}}
+        {{#unless devoured}}
+          {{> burgers/burger-block devoure=true}}
+        {{/unless}}
+      {{/each}}
+    </ol>
+
+    <h2>Burgers that are devoured!</h2>
+
+    <ol>
+      {{#each burgers}}
+        {{#if devoured}}
+          <li>{{burger_name}}</li>
+
+          {{!-- {{> burgers/burger-block devoure=false}} --}}
+        {{/if}}
+      {{/each}}
+    </ol>
+  </div>
+  <div class="row">
+    <h2>Add a Burger</h2>
+    <form class="create-form">
+
+      <div class="form-group">
+        <label for="ca">Burger Name:</label>
+        <textarea rows="4" cols="10" id="ca" name="name"></textarea>
+      </div>
+
+      {{!-- <div class="form-group">
+    <label for="ca">Cat Name:</label>
+    <input type="text" id="ca" name="name">
+  </div> --}}
+
+      <button type="submit" style="color: blue;">submit</button>
+      <div>Enter the burger you wnt eat and click submit button</div>
+    </form>
+  </div>
+</div>
