@@ -10,6 +10,10 @@ body {
      margin-right: auto;
      width: 20%;
 }
+#submit {
+     /* display: block; */
+     background-color: #00ffb3;
+}
 h1 {
      text-align: center;
 }
