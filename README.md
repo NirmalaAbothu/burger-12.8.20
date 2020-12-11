@@ -4,11 +4,11 @@
 
 ---
 
-![alt text](public\assets\Images\image1.PNG)
+![alt text](public/assets/Images/image1.PNG)
 
-![alt text](public\assets\Images\image2.PNG)
+![alt text](public/assets/Images/image2.PNG)
 
-![alt text](public\assets\Images\image3.PNG)
+![alt text](public/assets/Images/image3.PNG)
 
 This application is about Employee Management System from Command Line Interface.
 This application allows user to perfome following tasks
