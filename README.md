@@ -78,7 +78,7 @@ following commands
 
 ## Credits
 
-Followed the documentation about mysql
+Followed the documentation about MySql,Handlebars and MVC
 
 ## License & copyright
 
