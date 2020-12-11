@@ -10,103 +10,29 @@
 
 ![alt text](public/assets/Images/image3.PNG)
 
-This application is about Employee Management System from Command Line Interface.
-This application allows user to perfome following tasks
+-    Eat-Da-Burger! is a restaurant app that lets users input the names of burgers they'd like to eat.
 
--    View All Employees
--    View All Employees by Department
--    View All Employees by Manager
--    Add Employee
--    Remove Employee
--    Update Employee by Manager
--    Update Employee by Role
+-    Whenever a user submits a burger's name, app will display the burger on the left side of the page -- waiting to be devoured.
 
-First application prompts to user the following options:
+-    Each burger in the waiting area also has a `Devour it!` button. When the user clicks it, the burger will move to the right side of the page.
 
--    View All Employees
--    View All Employees by Department
--    View All Employees by Manager
--    Add Employee
--    Remove Employee
--    Update Employee by Manager
--    Update Employee by Role
-
-If user select View All Employees option,then user can able to see
-all the employees with the following details(columns):
-
--    first_name
--    last_name
--    title
--    salary
--    department
--    Manager
-
-If user select View All Employees by Department option,then user can able to see
-all the employees for that perticular department.
-
-If user select View All Employees by Manager option,then user can able to see
-all the employees for that perticular Manager.
-
-If user select Add Employee option,then user will be prompted with the
-following questions:
-
--    What is employee's first-name
--    What is employee's last-name
--    What is employee's role:
-     with list of role's title.
--    Select the manager for employee:
-     with list of managers.
-
-If user select Remove Employee option,then user will be prompted with the
-following question:
-
--    Select employee do you want remove?:
-     with list of employee names,after user select employee name
-     from the list,then perticular employee will be deleted from
-     the employee table.
-
-If user select Update Employee by Manager option,then user will be prompted with the
-following questions:
-
--    Select employee do you want update?:
-     with list of employee names,after user select employee name
-     from the list,then user will be prompted with the following
-     question
--    Select manager do you want assign?:
-     with list of managers.
-     Then peticular employee will be update with new Manager.
-
-If user select Update Employee by Role option,then user will be prompted with the
-following questions:
-
--    Select employee do you want update?:
-     with list of employee names,after user select employee name
-     from the list,then user will be prompted with the following
-     question
--    Select role do you want assign to selected employee?:
-     with list of role titles.
-     Then peticular employee will be update with new role.
-
-If user select EXIT option,connection will end and
-application exit.
+-    Your app will store every burger in a database, whether devoured or not.
 
 ## Implemented the following functionalities
 
--    View All Employees
--    View All Employees by Department
--    View All Employees by Manager
--    Add Employee
--    Remove Employee
--    Update Employee by Manager
--    Update Employee by Role
+-    selectAll()
+     -    Retrieve all burgers from database by executing SELECT staement and didplay on the UI.
+-    insertOne()
+     -    Add the burger to burgers table in database when user enter the burger name and click on submit button by executing INSERT statement
+-    updateOne()
+     -    Update the burger's devoured state from false to true and display in UI by executing UPDATE statement
 
 ## Built With
 
-Node modules
-
--    Inquirer : to prompts the user with questions
--    mysql
 -    express
+-    express-handlebars
+-    mysql
+-    dotenv
 
 ## Getting Started
 
@@ -118,26 +44,17 @@ None
 
 ## Installation instructions:
 
-Clone the repo git clone git@github.com:NirmalaAbothu/employee-management-system-11.29.20.git then open Git Bash window ,navigate to project folder then run
+Clone the repo git clone git@github.com:NirmalaAbothu/burger-12.8.20.git then open Git Bash window ,navigate to project folder then run
 following commands
 
--    run "npm init"
--    run "npm install mysql"
--    run "npm install dotenv"
--    run "npm install express", then
--    open the project in Visual Studio code,open the file "employee-tracker.sql" file
--    this file has information about database name,table names and data to create the records in tables.
--    copy and paste the entire code in "MYSQL Workbench" and run or execute the entire code in MYSQL Workbench,
--    make sure database(employee_trackerDB),tables(department,role and employee) and inserted records in tables are created successfully.
--    create ".env" file in root directory and assign your mysql password to PW, for example
--    PW = your mysql password.
--    then nvigate to terminal and run the following command
--    run "node employee-tracker.js"
--    if you get any error saying that perticular package cann't find, please install that specific package by runnig following command
-     run "npm run packagename(wahtever package missed)"
-     after install missing package again run the following command
-     run "node employee-tracker.js" and
-     select options from list and enter or select values as app directs.
+-    Make a package.json file by running `npm init` from the command line.
+
+-    Install the Express npm package: `npm install express`.
+
+-    Install the Handlebars npm package: `npm install express-handlebars`.
+
+-    Install MySQL npm package: `npm install mysql`.
+-    Install dotenv package: `npm install dotenv`
 
 ## Credits
 
