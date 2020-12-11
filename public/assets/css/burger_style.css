@@ -1,8 +1,5 @@
 body {
-     /*background-image: url("../Image//burgerImage2.jpg");*/
      background-color: #f5c65d;
-     background-repeat: no-repeat;
-     /* background-color: yellow; */
 }
 #burgerIcon {
      display: block;
@@ -11,12 +8,9 @@ body {
      width: 20%;
 }
 #submit {
-     /* display: block; */
      background-color: #00ffb3;
 }
-h1 {
-     text-align: center;
-}
+h1,
 form {
      text-align: center;
 }

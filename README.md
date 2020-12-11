@@ -16,7 +16,7 @@
 
 -    Each burger in the waiting area also has a `Devour it!` button. When the user clicks it, the burger will move to the right side of the page.
 
--    Your app will store every burger in a database, whether devoured or not.
+-    This app will store every burger in a database, whether devoured or not.
 
 ## Implemented the following functionalities
 
@@ -26,6 +26,9 @@
      -    Add the burger to burgers table in database when user enter the burger name and click on submit button by executing INSERT statement
 -    updateOne()
      -    Update the burger's devoured state from false to true and display in UI by executing UPDATE statement
+-    index.handlebars
+     -    To display to devour burgers and non-devour burgers on UI
+     -    Form to submit new burger.
 
 ## Built With
 
@@ -33,6 +36,8 @@
 -    express-handlebars
 -    mysql
 -    dotenv
+-    Boot Strap Grid System
+-    CSS
 
 ## Getting Started
 
@@ -55,6 +60,21 @@ following commands
 
 -    Install MySQL npm package: `npm install mysql`.
 -    Install dotenv package: `npm install dotenv`
+-    Navigate to project folder in VS Code,then
+-    create ".env" file in root directory and assign your mysql password to PW, for example
+-    PW = your mysql password.
+-    Again navigat to terminal your project folder.
+-    Make sure you're in the `db` folder of your app.
+-    Start MySQL command line tool and login: `mysql -u root -p`.
+-    Enter your password and click
+-    Run the command `source schema.sql`
+     -    This will run schema file and all of the queries in it to create database.
+-    Run the command `source seeds.sql`
+     -    This will insert the entries defined in `seeds.sql.
+-    Run `exit` to close out of the MySQL command line tool.
+-    Navigate to your app folder and run the following command to start the server
+     -    `node server.js` ,then navigate to browser and enter "localhost:3000" to see app
+          in browser.
 
 ## Credits
 
