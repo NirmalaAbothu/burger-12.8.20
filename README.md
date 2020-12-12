@@ -38,6 +38,7 @@
 -    dotenv
 -    Boot Strap Grid System
 -    CSS
+-    MVC(ORM)
 
 ## Getting Started
 
