@@ -21,7 +21,7 @@
 ## Implemented the following functionalities
 
 -    selectAll()
-     -    Retrieve all burgers from database by executing SELECT staement and didplay on the UI.
+     -    Retrieve all burgers from database by executing SELECT staement and display on the UI.
 -    insertOne()
      -    Add the burger to burgers table in database when user enter the burger name and click on submit button by executing INSERT statement
 -    updateOne()
@@ -73,7 +73,7 @@ following commands
      -    This will insert the entries defined in `seeds.sql.
 -    Run `exit` to close out of the MySQL command line tool.
 -    Navigate to your app folder and run the following command to start the server
-     -    `node server.js` ,then navigate to browser and enter "localhost:3000" to see app
+     -    `node server.js` ,then navigate to browser and enter "localhost:3001" to see app
           in browser.
 
 ## Credits
